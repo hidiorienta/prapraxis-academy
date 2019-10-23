@@ -1,0 +1,17 @@
+/bin, ini adalah tempat dimana program untuk perintah paling umum seperti ls, rm, mkdir, cp dsb. Yup, semua perintah Linux/Unix ada disini (klo lupa mampir kesini saja :D)
+/boot, di folder ini isinya Kernel Linux/Unix, Grub, Image RAM, pokoknya segala hal yang diperlukan sebuah OS Linux/Unix untuk Booting up.
+/dev berisi semua drive harddisk atau hardware seperti modem, CD/DVD/Blu-ray dsb. Hanya saja disini hanya merupakan link dan bukan isi, contohnya hdd partisi 1 ada di /dev/sda1 dan DVD-rom ada di /dev/sr0. untuk melihat isinya, harus dilakukan mounting (mount) terlebih dahulu.
+/etc berisi files konfigurasi dari program/aplikasi yang terinstall di dalam OS, misal konfigurasi Apache ada di /etc/apache2 dan SSH di /etc/ssh.
+/home, nah disini semua files dan folder milik seorang user disimpan, misalnya /home/ikons adalah folder milik user ikons, hal ini juga merupakan folder awal ketika kita melakukan remote ke ssh server dengan sebuah username. kalau di OS Windows folder ini mirip folder C:\Users\.
+/lib, berisi files atau folder penting seperti library program-program atau modul kernel. biasanya file dependency sebuah program harus ditaruh disini.
+/media merupakan folder mount dari external device seperti HDD external, flashdisk, CD/DVD. biasanya ketika memasukkan flashdisk ke USB, otomatis isinya akan muncul di file manager, sebenarnya itu lokasinya adalah di folder /media. beda dengan di OS Windows yang hanya langsung ditampilkan di file explorer.
+/mnt juga merupakan folder mount, hanya saja sifatnya sementara dan dilakukan manual, contohnya mount /dev/sdc2 /mnt, maka file di HDD/flashdisk di /dev/sdc2 akan muncul di folder /mnt.
+/opt biasanya di isi dengan program yang diinstall tidak melalui paket manager (apt-get atau yum), alias kompile dan install langsung dari kode sumber (source code).
+/proc merupakan folder yang isinya files dimana kernel menerima informasi, contohnya processor ada di /proc/cpuinfo dan ram di /proc/meminfo.
+/root, namanya saja root, ini adalah folder super user dimana ketika remote ke ssh server menggunakan root akan diarahkan kesini, bukan di folder home.
+/sbin berisi semua program yang hanya dapat dijalankan oleh super user, alias harus di sudo/su terlebih dahulu.
+/srv, folder ini bisa juga diisi oleh web server atau ftp server.
+/sys adalah folder dimana informasi mengenai sistem yang bisa dibaca oleh kernel.
+/tmp, tempat dimana file sementara disimpan, biasanya ketika install sebuah program.
+/usr berisi program-program yang merupakan tools seperti gcc, git, vim, mysql dsb. pokoknya selain program dasar/sederhana seperti di folder /bin. kalau di OS Windows ini seperti folder Program Files.
+/var yang merupakan folder yang isinya berubah (bertambah/berkurang) dengan cepat, seperti file log ada di folder /var/log, file email (sendmail/postfix) di /var/mail atau web server di folder /var/www (Fedora/CentOS ada di folder /home/user/public_html)

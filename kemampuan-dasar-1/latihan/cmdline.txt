@@ -1,0 +1,214 @@
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop    Downloads         Music     Public     Videos
+Documents  examples.desktop  Pictures  Templates
+
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls -ar
+Videos                     Pictures       examples.desktop  .bashrc
+Templates                  Music          Downloads         .bash_logout
+.sudo_as_admin_successful  .mozilla       Documents         .bash_history
+.ssh                       .local         Desktop           ..
+Public                     .ICEauthority  .config           .
+.profile                   .gnupg         .cache
+
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ cat > simple1
+this is simple1
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ cat simple1
+this is simple1
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ cat > simple2
+this is simple2
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ cat simple1 simple2 > simple
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ cat simple
+this is simple1
+this is simple2
+
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop    Downloads         filename  Pictures  simple   simple2    Videos
+Documents  examples.desktop  Music     Public    simple1  Templates
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ rm simple1
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop    Downloads         filename  Pictures  simple   Templates
+Documents  examples.desktop  Music     Public    simple2  Videos
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ rm simple2
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ rm simple
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop    Downloads         filename  Pictures  Templates
+Documents  examples.desktop  Music     Public    Videos
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ rm filename
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop    Downloads         Music     Public     Videos
+Documents  examples.desktop  Pictures  Templates
+
+
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ mv simple2 /home/hidiorienta/Documents
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop    Downloads         Music     Public  Templates
+Documents  examples.desktop  Pictures  simple  Videos
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ cd Documents
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~/Documents$ ls
+praxis-academy  simple2
+
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ mv simple simple1
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop    Downloads         Music     Public   Templates
+Documents  examples.desktop  Pictures  simple1  Videos
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ mkdir directoryname
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ mkdir mydirectory
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop        Documents  examples.desktop  mydirectory  Public   Templates
+directoryname  Downloads  Music             Pictures     simple1  Videos
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ mkdir /tmp/MUSIC
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls /tmp
+config-err-XPxGRd
+MUSIC
+ssh-Bj0Eey4NXaiH
+systemd-private-9251ca65ffc74d8a95bac0659c1ea92a-bolt.service-SRTmiq
+systemd-private-9251ca65ffc74d8a95bac0659c1ea92a-colord.service-Co3U6s
+systemd-private-9251ca65ffc74d8a95bac0659c1ea92a-fwupd.service-EJJUxa
+systemd-private-9251ca65ffc74d8a95bac0659c1ea92a-ModemManager.service-4dQh9V
+systemd-private-9251ca65ffc74d8a95bac0659c1ea92a-rtkit-daemon.service-Z1DapD
+systemd-private-9251ca65ffc74d8a95bac0659c1ea92a-systemd-resolved.service-3z4RTN
+systemd-private-9251ca65ffc74d8a95bac0659c1ea92a-systemd-timesyncd.service-POxc7Q
+Temp-55f83035-f1d4-42ad-8e60-6fbea527cc9b
+Temp-7ec7b257-bf31-4910-8266-6e9efd7d24a7
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ mkdir dir1 dir2 dir3
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop  dir3           Downloads         mydirectory  simple1
+dir1     directoryname  examples.desktop  Pictures     Templates
+dir2     Documents      Music             Public       Videos
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ rmdir directoryname
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ rm mydirectory
+rm: cannot remove 'mydirectory': Is a directory
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop  dir2  Documents  examples.desktop  mydirectory  Public   Templates
+dir1     dir3  Downloads  Music             Pictures     simple1  Videos
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ rmdir mydirectory
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop  dir2  Documents  examples.desktop  Pictures  simple1    Videos
+dir1     dir3  Downloads  Music             Public    Templates
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ rmdir dir1 dir2 dir3
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop    Downloads         Music     Public   Templates
+Documents  examples.desktop  Pictures  simple1  Videos
+
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ mkdir mydirectory
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop    Downloads         Music        Pictures  simple1    Videos
+Documents  examples.desktop  mydirectory  Public    Templates
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ mv mydirectory newdirectory
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ ls
+Desktop    Downloads         Music         Pictures  simple1    Videos
+Documents  examples.desktop  newdirectory  Public    Templates
+hidiorienta@hidiorienta-VivoBook-14-ASUS-Laptop-X441MA-X441MA:~$ history
+    1  wmctrl -m
+    2  ls
+    3  cd documents
+    4  cd Documents
+    5  ls
+    6  mkdir praxis-academy
+    7  ls
+    8  cd praxis-academy
+    9  mkdir kemampuan-dasar-1
+   10  cd kemampuan-dasar-1
+   11  mkdir latihan
+   12  cd latihan
+   13  nano grub.txt
+   14  cc ..
+   15  cd ..
+   16  cd
+   17  ls
+   18  ls -al
+   19  cd latihan
+   20  cd Documents
+   21  cd praxis-academy
+   22  cd kemampuan-dasar-1
+   23  cd latihan
+   24  nano env.txt
+   25  nano kernel-linux.txt
+   26  ls
+   27  sudo apt-get install neofetch
+   28  sudo apt install neofetch
+   29  sudo apt update
+   30  sudo apt-get install wmctrl
+   31  wmctrl -m
+   32  uname -a
+   33  xdg_curent_dekstop
+   34  XDG_CURRENT_DEKSTOP
+   35  gdmsession
+   36  gdmsession=ubuntu
+   37  wmctrl -m
+   38  uname -r
+   39  uname -a
+   40  ls -al
+   41  sudo fdisk -l
+   42  sudo apt-get install gparted
+   43  gparted
+   44  dpkg --get-selections | grep linux-image
+   45  linux-image-3.16.0-4-amd64install
+   46  linux-image-amd64
+   47  dpkg -l | grep linux-image
+   48  ls
+   49  ls -r
+   50  ls -ar
+   51  ls -a
+   52  cat>filename
+   53  cat > simple1
+   54  cat simple1
+   55  cat > simple2
+   56  cat simple1 simple2 > simple
+   57  cat simple
+   58  ls
+   59  rm simple1
+   60  ls
+   61  rm simple2
+   62  rm simple
+   63  ls
+   64  rm filename
+   65  ls
+   66  cat > simple2
+   67  rm simple2
+   68  ls
+   69  cat > simple1
+   70  cat > simple2
+   71  cat simple1 simple2 > simple
+   72  ls
+   73  rm simple1
+   74  ls
+   75  mv simple2 /home/hidiorienta/Documents
+   76  ls
+   77  cd Documents
+   78  ls
+   79  cd Documents
+   80  rm simple2
+   81  ls
+   82  cd ~
+   83  cat > simple2
+   84  mv simple2 /home/hidiorienta/Documents
+   85  ls
+   86  cd Documents
+   87  ls
+   88  cd ~
+   89  ls
+   90  mv simple simple1
+   91  ls
+   92  mkdir directoryname
+   93  mkdir mydirectory
+   94  ls
+   95  mkdir /tmp/MUSIC
+   96  ls /tmp
+   97  mkdir dir1 dir2 dir3
+   98  ls
+   99  rmdir directoryname
+  100  rm mydirectory
+  101  ls
+  102  rmdir mydirectory
+  103  ls
+  104  rmdir dir1 dir2 dir3
+  105  ls
+  106  mkdir mydirectory
+  107  ls
+  108  mv mydirectory newdirectory
+  109  ls
+  110  rm simple1
+  111  ls
+  112  history
+
