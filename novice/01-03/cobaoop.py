@@ -5,7 +5,7 @@ class ZooMember:
         print('(Zoo Member)'.format(self.name))
 
     def tell(self):
-        print('Name:"{}" Age:"{}"'.format(self.name, self.age), end=" ")
+        print('Name:"{}", Age:"{}"'.format(self.name, self.age), end=" ")
 
 class Mother(ZooMember):
     def __init__(self, name, age, food):
